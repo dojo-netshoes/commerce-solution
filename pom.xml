@@ -66,6 +66,7 @@
     <modules>
         <module>shared-modules/shared-domain</module>
         <module>modules/store-domain</module>
+        <module>modules/store-repository</module>
         <module>modules/store-mongo-gateway</module>
         <module>modules/store-business</module>
         <module>modules/store</module>
