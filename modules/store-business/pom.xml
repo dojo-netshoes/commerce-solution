@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>com.ciandt.netshoes</groupId>
-            <artifactId>store-mongo-gateway</artifactId>
+            <artifactId>store-repository</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>
