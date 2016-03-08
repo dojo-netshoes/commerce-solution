@@ -1,0 +1,35 @@
+server:
+  port: 8081
+era-core:
+  name: store
+
+############################################
+############### MONGO DB     ###############
+############################################
+spring:
+ devtools:
+     remote:
+       secret: store
+ data:
+  mongodb:
+    database: store
+    host: localhost
+    port: 27017
+
+server:
+  servlet-path: /store
+
+shell:
+  ssh:
+    enabled: true
+  auth:
+    simple:
+      user:
+        name: store
+        password: store
+
+domains:
+  access:
+    control:
+      allow:
+        origin: '*'
