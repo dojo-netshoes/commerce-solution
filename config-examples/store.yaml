@@ -3,6 +3,9 @@ server:
 era-core:
   name: store
 
+spring.groovy.template.cache: false
+logging.level.org.springframework.web: INFO
+
 ############################################
 ############### MONGO DB     ###############
 ############################################

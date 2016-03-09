@@ -19,27 +19,27 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product persist(final Product product) {
-        return productMongoGateway.persist(product);
+        return productMongoGateway.save(product);
     }
 
     @Override
     public List<Product> persist(final List<Product> products) {
-        return productMongoGateway.persist(products);
+        return productMongoGateway.save(products);
     }
 
     @Override
     public void remove(final Product product) {
-        productMongoGateway.remove(product);
+        productMongoGateway.delete(product);
     }
 
     @Override
     public void remove(final List<Product> products) {
-        productMongoGateway.remove(products);
+        productMongoGateway.delete(products);
     }
 
     @Override
     public void remove(final String id) {
-        productMongoGateway.remove(id);
+        productMongoGateway.delete(id);
     }
 
     @Override
@@ -49,6 +49,6 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product findById(final String id) {
-        return productMongoGateway.findById(id);
+        return productMongoGateway.findOne(id);
     }
 }

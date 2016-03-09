@@ -26,14 +26,23 @@ public class StoreResource {
     private StoreService storeService;
 
     @GET
-    @Path("/{id}")
+    @Path("/product/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response get(@PathParam("id") final String id) {
         final Product product = storeService.findById(id);
         return Response.ok(product).build();
     }
 
+    @GET
+    @Path("/products")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response get() {
+        final List<Product> products = storeService.findAll();
+        return Response.ok(products).build();
+    }
+
     @POST
+    @Path("/product")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response add(Product product) {
@@ -42,6 +51,7 @@ public class StoreResource {
     }
 
     @POST
+    @Path("/products")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response add(List<Product> products) {
@@ -50,7 +60,7 @@ public class StoreResource {
     }
 
     @DELETE
-    @Path("/{id}")
+    @Path("/product/{id}")
     public void remove(final String id) {
         storeService.remove(id);
     }
