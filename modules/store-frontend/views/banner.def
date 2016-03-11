@@ -1,0 +1,1 @@
+<img class="col-md-4" id="{{=banner.id}}" class="combo" src="{{=banner.image}}" onclick="clicouEm(this)"/>

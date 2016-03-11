@@ -1,0 +1,33 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper{
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    background-color: #351354;
+}
+
+.header-wrapper{
+    padding-top: 15px;
+    background-color:#5a2d82;
+    height: 75px;
+}
+
+.header-wrapper nav{
+    background-color:#5a2d82;
+}
+
+.nav-wrapper{
+    background-color: #13abe1;
+    height: 35px;
+}
+
+.button-search{
+    background-image: "img/1457729932_icon-111-search.png";
+    background-repeat: no-repeat;
+    background-position: center;
+}

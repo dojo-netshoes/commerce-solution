@@ -1,0 +1,24 @@
+{
+	"code": 200,
+	"content" : [{
+		"id": 1,
+    "image": "http://static1.netshoes.net/resources/netshoes/banners/full/segmentado/consumidor/full1_con_160301_ffffff_1024.jpg",
+		"href": "http://www.netshoes.com.br/lst/3por2?mi=hm_sc_f1_mes-consumidor-3por2_160301&psn=Banner_Full_1&fc=banner"
+  },{
+		"id": 2,
+    "image": "http://static1.netshoes.net/resources/netshoes/banners/full/segmentado/generico/full2_gen_160310_ffffff_1024.jpg",
+		"href": "http://www.netshoes.com.br/lst/ofertas?Nr=OR(product.productType.displayName:T%C3%AAnis,product.productType.displayName:T%C3%AAnis%20Performance),product.manufacturer.displayName:Nike&mi=hm_sc_f2_mes-consumidor-especial-nike_160310&psn=Banner_Full_2&fc=banner"
+  },{
+		"id": 3,
+    "image": "http://static1.netshoes.net/resources/netshoes/banners/full/segmentado/generico/full3_gen_160310_ffffff_1024.jpg",
+		"href": "http://www.netshoes.com.br/lst/camisasdetime?mi=hm_sc_f3_mes-consumidor-camisas-time_160305&psn=Banner_Full_3&fc=banner"
+  },{
+		"id": 4,
+    "image": "http://static1.netshoes.net/resources/netshoes/banners/full/segmentado/generico/full4_gen_160310_ffffff_1024.jpg",
+		"href": "http://www.netshoes.com.br/running/adidas?Ntt=springblade&mi=hm_sc_f4_mes-consumidor-ten-add-springblade_160310&psn=Banner_Full_4&fc=banner"
+  },{
+		"id": 5,
+    "image": "http://static1.netshoes.net/resources/netshoes/banners/full/segmentado/generico/full5_gen_160310_ffffff_1024.jpg",
+		"href": "http://www.netshoes.com.br/bcaa?mi=hm_sc_f5_mes-consumidor-bcaa_160310&psn=Banner_Full_5&fc=banner"
+  }]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+  <head>
+    {{#def.common_stylesheets}}
+    <title>Lista de Produtos | Netshoes</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      {{#def.header}}
+      <ul id="products">
+        {{~it.products :product:index}}
+          {{#def.product}}
+        {{~}}
+      </ul>
+      <div class="clearfix"></div>
+
+      <nav>
+        <ul class="pagination">
+          <li class="{{=it.page - 1 || 'disabled'}}" >
+            <a href="/list?page={{=it.page - 1}}" aria-label="Anterior">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li><a href="/list?page=1">1</a></li>
+          <li><a href="/list?page=2">2</a></li>
+          <li>
+            <a href="/list?page={{=it.page + 1}}" aria-label="Próximo">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      {{#def.footer}}
+    </div>
+  </body>
+
+</html>
+

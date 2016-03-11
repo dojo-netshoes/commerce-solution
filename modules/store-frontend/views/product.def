@@ -1,0 +1,11 @@
+<li class="product">
+
+  <img src="{{=product.image}}" style="width: 254px" />
+
+  <p class="title">{{=product.name}}</p>
+
+  <p class="price">
+    {{= "R$ " + product.price.formatMoney(2, ",", ".")}}
+  </p>
+
+</li>
