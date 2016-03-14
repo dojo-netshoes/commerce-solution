@@ -4,7 +4,7 @@ var dot = require('dot');
 var path = require('path');
 var bodyParser = require('body-parser');
 var url = require('url');
-var rest = require('restler');
+var restler = require('restler');
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -19,7 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // res.status(200).send(render());
 app.get("/", function(req, res) {
    var render = require('./views/home');
-   res.status(200).send(render());
+   restler.get("http://localhost:8081/api/catalog").on('complete', function(data) {
+          console.log(data);
+          res.status(200).send(render(data));
+   });
+
 });
 
 

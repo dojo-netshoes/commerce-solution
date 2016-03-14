@@ -1,7 +1,6 @@
-package com.ciandt.netshoes.store;
+package com.ciandt.netshoes.webstore;
 
-import com.ciandt.netshoes.store.resources.CatalogResource;
-import com.ciandt.netshoes.store.resources.StoreResource;
+import com.ciandt.netshoes.webstore.resources.CatalogResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,7 +18,6 @@ public class JerseyConfiguration extends ResourceConfig {
     }
 
     private void registerResources() {
-        register(StoreResource.class);
         register(CatalogResource.class);
     }
 }

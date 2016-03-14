@@ -1,0 +1,36 @@
+spring:
+  devtools:
+    remote:
+      secret: brutal
+  datasource:
+    url: jdbc:mysql://localhost:3306/webstore
+    username: root
+    password: brutal
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  # Naming strategy
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+  # Allows Hibernate to generate SQL optimized for a particular DBMS
+      dialect: org.hibernate.dialect.MySQL5Dialect
+
+server:
+  port: 8081
+  servlet-path: /system
+
+shell:
+  ssh:
+    enabled: true
+  auth:
+    simple:
+      user:
+        name: admin
+        password: brutal
+
+domains:
+  access:
+    control:
+      allow:
+        origin: '*'

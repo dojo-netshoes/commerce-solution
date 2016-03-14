@@ -91,6 +91,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -154,13 +160,13 @@
         <profile>
             <id>QA</id>
             <properties>
-                <profile-id>DEV</profile-id>
+                <profile-id>QA</profile-id>
             </properties>
         </profile>
         <profile>
             <id>stage</id>
             <properties>
-                <profile-id>DEV</profile-id>
+                <profile-id>stage</profile-id>
             </properties>
         </profile>
     </profiles>
